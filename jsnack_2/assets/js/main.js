@@ -15,11 +15,11 @@ let minus;
 if (first_word.length > second_word.length) {
     more = first_word;
     minus = second_word;
-    mainEl.append(minus + ' ' + more);
+    mainEl.append('Più corta: ' + minus + ' Più lunga: ' + more);
 } else if(second_word.length > first_word.length) {
     more = second_word;
     minus = first_word;
-    mainEl.append(minus + ' ' + more);
+    mainEl.append('Più corta: ' + minus + ' Più lunga: ' + more);
 } else {
     mainEl.innerHTML = "Le parole hanno la stessa lunghezza";
     //console.log('Num1: ' + num1 + ' è uguale a Num2: ' + num2);
