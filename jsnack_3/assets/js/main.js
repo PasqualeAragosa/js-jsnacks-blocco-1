@@ -8,9 +8,9 @@ let counter = 0;
 
 for (let i = 0; i < 10; i++) {
     const num = Number(prompt('Inserisci un numero: '));
-    console.log(num);
+    console.log('Numero inserito ', num);
     counter = counter + num;
-    console.log(counter);
+    console.log('Somma ', counter);
 }
 
 mainEl.innerHTML = 'La somma dei 10 numeri è pari a: ' + counter;
