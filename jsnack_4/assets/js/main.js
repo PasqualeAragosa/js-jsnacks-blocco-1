@@ -9,17 +9,19 @@ const nameList = [
     'Pasquale',
     'Andrea'
 ]
-let result = false;
 
+let result = false;
 let i = 0;
 
 while (i < nameList.length) {
-    console.log('Nome inserito ', nameUser);
     if (nameUser === nameList[i]) {
         result = true;
     }
     i++;
 }
 
-
-mainEl.innerHTML = 'Partecipazione: ' + result;
+if (result === true) {
+    mainEl.innerHTML = 'Benvenuto';
+} else {
+    mainEl.innerHTML = 'Non sei il benvenuto';
+}
